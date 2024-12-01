@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css",
-    "start": "node index.js",
-    "dev": "npm run build && npm run start",
-    "test": "npm run build && npm run start"
+    "tbhild": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css -w",
+    "start": "node index.js"
   },
   "private": true,
   "dependencies": {
