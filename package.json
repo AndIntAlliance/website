@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css && minify public/css/output.css > public/css/output.min.css",
+    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css && npx minify public/css/output.css > public/css/output.min.css",
     "start": "node minimg.js && echo '\nMinify process complete.' && node index.js"
   },
   "private": true,
@@ -16,6 +16,7 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "minify": "^12.0.0",
     "tailwindcss": "^3.4.15"
   }
 }
