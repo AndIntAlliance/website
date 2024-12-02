@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css",
-    "tbhild": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css -w",
+    "tbuild": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css -w",
     "start": "node index.js"
   },
   "private": true,
