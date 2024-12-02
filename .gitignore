@@ -2,4 +2,5 @@
 node_modules/
 public/css/output.css
 public/css/output.min.css
+public/img/optimized
 package-lock.json

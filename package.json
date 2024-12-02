@@ -4,17 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css",
-    "tbuild": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css -w",
-    "start": "gulp && echo '\nMinify process complete.' && node index.js"
+    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css && minify public/css/output.css > public/css/output.min.css",
+    "start": "node minimg.js && echo '\nMinify process complete.' && node index.js"
   },
   "private": true,
   "dependencies": {
+    "compression": "^1.7.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
-    "gulp": "^5.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1"
+    "express-static-gzip": "^2.2.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.15"
