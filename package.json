@@ -6,12 +6,15 @@
   "scripts": {
     "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css",
     "tbuild": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css -w",
-    "start": "node index.js"
+    "start": "gulp && echo '\nMinify process complete.' && node index.js"
   },
   "private": true,
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.15"
